@@ -1,0 +1,101 @@
+*
+{
+    padding: 0;
+    margin: 0
+}
+body
+{
+    background-image:url(background.jpg);
+    background-size:cover;
+    background-position: center;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+.heading-bar
+{
+    background: linear-gradient(to right,#a82d2d, #c05c5c);
+    text-align: center-left;
+}
+.heading-bar
+{
+    display:inline-flex;
+    list-style:none;
+    color:#fff;
+    font-size:400%;
+}
+.heading-bar ul li
+{
+    width: 1600px;
+    margin: 0.0005px;
+    padding: 15px;
+}
+.menu-bar
+{
+    background: rgb(0,0,0);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display:inline-flex;
+    list-style:none;
+    color:#fff;
+}
+.menu-bar ul li
+{
+    width: 150px;
+    margin: 0.0005px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.action, .menu-bar ul li:hover
+{
+    background: #2c2f2c;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+.button-container 
+{ 
+    display: flex; 
+    flex-direction: column; 
+    align-items:flex-start; /* Optional: center-align the buttons horizontally */ 
+    margin-top: 100px; 
+    margin-left: 200px;
+}
+button 
+{ 
+    padding: 20px 20px;
+    margin: 20px 0;
+    border: none; 
+    background-color: #a82d2d; 
+    color: white; 
+    font-size: larger;
+    cursor: pointer; 
+    border-radius: 10px; 
+} 
+button:hover 
+{ 
+    background-color:  #c05c5c; 
+} 
+button.attendance:hover 
+{ 
+    background-color: #c05c5c; /* Gold */ 
+} 
+button.new-student:hover 
+{
+     background-color: #c05c5c; /* DodgerBlue */ 
+} 
+button.delete-student:hover 
+{ 
+    background-color: #c05c5c; /* Tomato */ 
+} 
+button.update-manually:hover 
+{ 
+    background-color: #c05c5c; /* HotPink */
+}

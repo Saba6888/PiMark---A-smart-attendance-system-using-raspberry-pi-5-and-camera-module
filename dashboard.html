@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="heading-bar">
+      <ul>
+        <li>Welcome, Admin!</li>
+      </ul>
+    </div>
+    <div class="menu-bar">
+      <ul>
+        <li class="active">
+          <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li><a href="#"><i class="fa-solid fa-user"></i>About Us</a></li>
+        <li><a href="#"><i class="fa-solid fa-gear"></i>Setting</a></li>
+        <li><a href="#"><i class="fa-solid fa-info"></i>Help</a></li>
+        <li><a href="#"><i class="fa-solid fa-phone"></i>Contact</a></li>
+      </ul>
+    </div>
+    <div class="button-container">
+      <button class="attendance">Mark Attendance</button>
+      <button class="new-student" id="addNewStudent">Add New Student</button>
+      <button class="delete-student">Delete Student</button>
+      <button class="update-manually">Update Manually</button>
+    </div>
+
+    <script>
+      document.getElementById('addNewStudent').addEventListener('click', function() {
+        window.location.href = 'add_attendace.html';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Image</title>
+    <link rel="stylesheet" href="static/css/add_attendance.css"/>
+    <link rel="icon" href="static/favicon.ico" />
+</head>
+<body>
+    <div class="container">
+        <!-- Camera Section -->
+        <div class="camera-section">
+            <video id="video" autoplay></video>
+            <button id="capture">Capture Image</button>
+            <canvas id="canvas" style="display:none;"></canvas>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h1>Save Image</h1>
+            <form id="capture-form">
+                <!-- Student ID Input -->
+                <input type="text" id="student_id" placeholder="Enter Student ID" required />
+                <!-- Student Name Input -->
+                <input type="text" id="name" placeholder="Enter Name" required />
+                <button type="button" id="submitBtn">Save Image</button>
+                <p id="status" style="color: green; display: none;">Saving...</p>
+            </form>
+        </div>
+    </div>
+    <!-- Use Flask's url_for to reference the JavaScript file -->
+    <script src="{{ url_for('static', filename='js/add_attendance.js') }}"></script>
+</body>
+</html>
