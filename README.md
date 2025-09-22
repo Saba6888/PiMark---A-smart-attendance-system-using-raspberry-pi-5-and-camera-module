@@ -1,4 +1,4 @@
-<h1 align="center">📸 Face Recognition Attendance System (Flask + OpenCV)</h1>
+<h1 align="center">📸 PiMark---A-smart-attendance-system-using-raspberry-pi-5-and-camera-module (Flask + OpenCV)</h1>
 
 <p align="center">
   An AI-powered web application for automatic student attendance marking using <b>Face Recognition</b>, built with <code>Flask</code>, <code>OpenCV</code>, and <code>SQLite</code>.
